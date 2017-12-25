@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Hellblade graphics guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body {
+            text-align: center;
+            color: white;
+            background-image: url("bg.jpg");
+            background-size: cover;
+        }
+        .slide-comparison {
+            display: inline-block;
+        }
+        #top_text {
+            font-family: sans-serif;
+            padding-bottom: 10px;
+        }
+        #left_side {
+            float: left;
+            padding-left: 10%;
+         }
+        #center_s {
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: bold;
+        }
+        #right_side {
+            float: right;
+            padding-right: 10%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="top_text">
+    <div id="left_side">
+        <select onchange="$('#imageToSwapLeft').attr('src', this.options[this.selectedIndex].value);">
+            <option selected="selected" value="screenshots/overall/low98.png">Low</option>
+            <option value="screenshots/overall/medium78.png">Medium</option>
+            <option value="screenshots/overall/high65.png">High</option>
+            <option value="screenshots/overall/veryhigh59.png">Very high</option>
+        </select>
+    </div>
+    <div id="right_side">
+        <select onchange="$('#imageToSwapRight').attr('src', this.options[this.selectedIndex].value);">
+            <option value="screenshots/overall/low98.png">Low</option>
+            <option value="screenshots/overall/medium78.png">Medium</option>
+            <option value="screenshots/overall/high65.png">High</option>
+            <option selected="selected" value="screenshots/overall/veryhigh59.png">Very high</option>
+        </select>
+    </div>
+    <div id="center_s">Overall quality presets</div>
+</div>
+
+<div class="slide-comparison">
+    <img id="imageToSwapRight" class="profile" src="screenshots/overall/veryhigh59.png">
+    <div class="resized">
+        <img id="imageToSwapLeft" class="profile" src="screenshots/overall/low98.png">
+    </div>
+    <div class="divider"></div>
+</div>
+
+<script src="image-comparison-slider.js"></script>
+
+</body>
+</html>
