@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Overall quality presets comparison (Hellblade graphics guide)</title>
+    <title>Foliage quality comparison (Hellblade graphics guide)</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta name="theme-color" content="#2f5a86"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,33 +45,33 @@
 <div id="top_text">
     <div id="left_side">
         <select onchange="$('#imageToSwapLeft').attr('src', this.options[this.selectedIndex].value);">
-            <option selected="selected" value="screenshots/overall/low98.jpg">Low (98 FPS)</option>
-            <option value="screenshots/overall/medium78.jpg">Medium (78 FPS)</option>
-            <option value="screenshots/overall/high65.jpg">High (65 FPS)</option>
-            <option value="screenshots/overall/veryhigh59.jpg">Very high (59 FPS)</option>
+            <option selected="selected" value="screenshots/foliage/low50.jpg">Low (50 FPS)</option>
+            <option value="screenshots/foliage/medium49.jpg">Medium (49 FPS)</option>
+            <option value="screenshots/foliage/high49.jpg">High (49 FPS)</option>
+            <option value="screenshots/foliage/veryhigh48.jpg">Very high (48 FPS)</option>
         </select>
     </div>
     <div id="right_side">
         <select onchange="$('#imageToSwapRight').attr('src', this.options[this.selectedIndex].value);">
-            <option value="screenshots/overall/low98.jpg">Low (98 FPS)</option>
-            <option value="screenshots/overall/medium78.jpg">Medium (78 FPS)</option>
-            <option value="screenshots/overall/high65.jpg">High (65 FPS)</option>
-            <option selected="selected" value="screenshots/overall/veryhigh59.jpg">Very high (59 FPS)</option>
+            <option value="screenshots/foliage/low50.jpg">Low (50 FPS)</option>
+            <option value="screenshots/foliage/medium49.jpg">Medium (49 FPS)</option>
+            <option value="screenshots/foliage/high49.jpg">High (49 FPS)</option>
+            <option selected="selected" value="screenshots/foliage/veryhigh48.jpg">Very high (48 FPS)</option>
         </select>
     </div>
-    <div id="center_s">Overall quality presets</div>
+    <div id="center_s">Foliage quality</div>
 </div>
 
 <div class="slide-comparison">
-    <img id="imageToSwapRight" class="profile" src="screenshots/overall/veryhigh59.jpg">
+    <img id="imageToSwapRight" class="profile" src="screenshots/foliage/veryhigh48.jpg">
     <div class="resized">
-        <img id="imageToSwapLeft" class="profile" src="screenshots/overall/low98.jpg">
+        <img id="imageToSwapLeft" class="profile" src="screenshots/foliage/low50.jpg">
     </div>
     <div class="divider"></div>
 </div>
 
 <div id="bottom_text">
-    "Set the overall preset of graphics quality."
+    "Set the density and draw distance of foliage. Higher settings will make the foliage thicker and visible at greater distances."
 </div>
 
 <script src="image-comparison-slider-big.js"></script>

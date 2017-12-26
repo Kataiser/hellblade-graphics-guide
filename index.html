@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <meta charset="UTF-8">
+    <title>Hellblade graphics guide</title>
+    <link rel="shortcut icon" type="image/x-icon" href="html/favicon.ico">
+    <meta name="theme-color" content="#"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:900" rel="stylesheet">
+    <style type="text/css">
+        body {
+            text-align: center;
+            color: black;
+            background: black url('html/bg.jpg');
+            background-size: cover;
+        }
+        .all_encompassing {
+            display: flex;
+            justify-content: center;
+        }
+        .center_column {
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            min-width: 1024px;
+            box-shadow: 0 0 128px rgba(0, 0, 0, 1);
+        }
+        .slide-comparison {
+            display: inline-block;
+        }
+        .title {
+            font-family: 'Alegreya', serif;
+            font-size: 2em;
+            background-color: #4482c2;
+        }
+    </style>
 </head>
 <body>
 
-<a href="https://kataiser.github.io/hellblade-graphics-guide/html/overall-graphics-presets.html">Click plz</a>
+<div class="all_encompassing">
+    <div class="center_column">
+        <p class="title">Hellblade: Senua's Sacrifice graphics guide</p>
+        <div> <!-- this is intentional I swear -->
+            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/overall-graphics-presets.html" target="_blank">
+                <div class="slide-comparison">
+                    <img id="imageToSwapRight" class="profile" src="html/screenshots/overall/veryhigh59_small.jpg">
+                    <div class="resized">
+                        <img id="imageToSwapLeft" class="profile" src="html/screenshots/overall/low98_small.jpg">
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </a>
+        </div>
+        <div> <!-- this is intentional I swear -->
+            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/foliage.html" target="_blank">
+                <div class="slide-comparison">
+                    <img id="imageToSwapRight" class="profile" src="html/screenshots/foliage/veryhigh48_small.jpg">
+                    <div class="resized">
+                        <img id="imageToSwapLeft" class="profile" src="html/screenshots/foliage/low50_small.jpg">
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="html/image-comparison-slider-small.js"></script>
 
 </body>
 </html>
