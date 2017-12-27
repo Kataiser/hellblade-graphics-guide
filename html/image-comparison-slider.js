@@ -147,11 +147,25 @@
 
 	exports = module.exports = __webpack_require__(/*! ./../~/css-loader/lib/css-base.js */ 3)();
 	// imports
-	
-	
+	//suddenly Kataiser's code! (kinda, just a few modifications)
+    var script_tag = document.getElementById('searcher');
+    var query = script_tag.src.replace(/^[^\?]+\??/,'');
+    // Parse the querystring into arguments and parameters
+    var vars = query.split("&");
+    var args = {};
+    for (var i=0; i<vars.length; i++) {
+        var pair = vars[i].split("=");
+        // decodeURI doesn't expand "+" to a space.
+        args[pair[0]] = decodeURI(pair[1]).replace(/\+/g, ' ');
+    }
+    var width_mode = args['mode'];
+
 	// module
-	exports.push([module.id, ".slide-comparison {\n  width: 60%;\n  height: window.innerHeightpx;\n  position: relative;\n  overflow: hidden; }\n  .slide-comparison img {\n    display: block;\n    width: 100%;\n    height: 100%; }\n  .slide-comparison .resized {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 100%;\n    width: 50%;\n    overflow: hidden; }\n  .slide-comparison .divider {\n    position: absolute;\n    left: 50%;\n    top: 0;\n    bottom: 0;\n    width: 4px;\n    margin-left: -2px;\n    background: rgba(0, 0, 0, 0.5); }\n\n@media (max-width: 767px) {\n  .slide-comparison {\n    width: 300px;\n    height: 200px; } }\n", ""]);
-	
+	if(width_mode === "inline") {
+        exports.push([module.id, ".slide-comparison {\n  width: 95%;\n  height: window.innerHeightpx;\n  position: relative;\n  overflow: hidden; }\n  .slide-comparison img {\n    display: block;\n    width: 100%;\n    height: 100%; }\n  .slide-comparison .resized {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 100%;\n    width: 50%;\n    overflow: hidden; }\n  .slide-comparison .divider {\n    position: absolute;\n    left: 50%;\n    top: 0;\n    bottom: 0;\n    width: 4px;\n    margin-left: -2px;\n    background: rgba(0, 0, 0, 0.5); }\n\n@media (max-width: 767px) {\n  .slide-comparison {\n    width: 300px;\n    height: 200px; } }\n", ""]);
+    } else {
+        exports.push([module.id, ".slide-comparison {\n  width: 80%;\n  height: window.innerHeightpx;\n  position: relative;\n  overflow: hidden; }\n  .slide-comparison img {\n    display: block;\n    width: 100%;\n    height: 100%; }\n  .slide-comparison .resized {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 100%;\n    width: 50%;\n    overflow: hidden; }\n  .slide-comparison .divider {\n    position: absolute;\n    left: 50%;\n    top: 0;\n    bottom: 0;\n    width: 4px;\n    margin-left: -2px;\n    background: rgba(0, 0, 0, 0.5); }\n\n@media (max-width: 767px) {\n  .slide-comparison {\n    width: 300px;\n    height: 200px; } }\n", ""]);
+    }
 	// exports
 
 
