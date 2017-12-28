@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>View effects quality comparison (Hellblade graphics guide)</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="theme-color" content="#2f5a86"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body {
+            text-align: center;
+            color: white;
+            background: black url('bg.jpg');
+            background-size: auto;
+        }
+        .slide-comparison {
+            display: inline-block;
+        }
+        #top_text {
+            font-family: sans-serif;
+            padding-bottom: 10px;
+        }
+        #bottom_text {
+            font-family: sans-serif;
+            padding-top: 10px;
+        }
+        #left_side {
+            float: left;
+            padding-left: 10%;
+        }
+        #center_s {
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: bold;
+        }
+        #right_side {
+            float: right;
+            padding-right: 10%;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+
+<div id="top_text">
+    <div id="left_side">
+        <select onchange="$('#imageToSwapLeft').attr('src', this.options[this.selectedIndex].value);">
+            <option selected="selected" value="screenshots/view effects/low64.jpg">Low (64 FPS)</option>
+            <option value="screenshots/view effects/medium61.jpg">Medium (61 FPS)</option>
+            <option value="screenshots/view effects/high60.jpg">High (60 FPS)</option>
+            <option value="screenshots/view effects/veryhigh60.jpg">Very high (60 FPS)</option>
+        </select>
+    </div>
+    <div id="right_side">
+        <select onchange="$('#imageToSwapRight').attr('src', this.options[this.selectedIndex].value);">
+            <option value="screenshots/view effects/low64.jpg">Low (64 FPS)</option>
+            <option value="screenshots/view effects/medium61.jpg">Medium (61 FPS)</option>
+            <option value="screenshots/view effects/high60.jpg">High (60 FPS)</option>
+            <option selected="selected" value="screenshots/view effects/veryhigh60.jpg">Very high (60 FPS)</option>
+        </select>
+    </div>
+    <div id="center_s">View effects</div>
+</div>
+
+<div class="slide-comparison">
+    <img id="imageToSwapRight" class="profile" src="screenshots/view effects/veryhigh60.jpg">
+    <div class="resized">
+        <img id="imageToSwapLeft" class="profile" src="screenshots/view effects/low64.jpg">
+    </div>
+    <div class="divider"></div>
+</div>
+
+<div id="bottom_text">
+    "Set the quality of special effects. Higher settings will result in better quality of particle lights and reflections."
+</div>
+
+<script id="searcher" src="image-comparison-slider.js?mode=fullscreen"></script>
+
+</body>
+</html>
