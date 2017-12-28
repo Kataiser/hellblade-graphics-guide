@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Foliage quality comparison (Hellblade graphics guide)</title>
+    <title>Postprocessing quality comparison (Hellblade graphics guide)</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta name="theme-color" content="#2f5a86"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,33 +45,33 @@
 <div id="top_text">
     <div id="left_side">
         <select onchange="$('#imageToSwapLeft').attr('src', this.options[this.selectedIndex].value);">
-            <option selected="selected" value="screenshots/foliage/low50.jpg">Low (50 FPS)</option>
-            <option value="screenshots/foliage/medium49.jpg">Medium (49 FPS)</option>
-            <option value="screenshots/foliage/high49.jpg">High (49 FPS)</option>
-            <option value="screenshots/foliage/veryhigh48.jpg">Very high (48 FPS)</option>
+            <option selected="selected" value="screenshots/postprocessing/low58.jpg">Low (58 FPS)</option>
+            <option value="screenshots/postprocessing/medium53.jpg">Medium (53 FPS)</option>
+            <option value="screenshots/postprocessing/high54.jpg">High (54 FPS)</option>
+            <option value="screenshots/postprocessing/veryhigh54.jpg">Very high (54 FPS)</option>
         </select>
     </div>
     <div id="right_side">
         <select onchange="$('#imageToSwapRight').attr('src', this.options[this.selectedIndex].value);">
-            <option value="screenshots/foliage/low50.jpg">Low (50 FPS)</option>
-            <option value="screenshots/foliage/medium49.jpg">Medium (49 FPS)</option>
-            <option value="screenshots/foliage/high49.jpg">High (49 FPS)</option>
-            <option selected="selected" value="screenshots/foliage/veryhigh48.jpg">Very high (48 FPS)</option>
+            <option value="screenshots/postprocessing/low58.jpg">Low (58 FPS)</option>
+            <option value="screenshots/postprocessing/medium53.jpg">Medium (53 FPS)</option>
+            <option value="screenshots/postprocessing/high54.jpg">High (54 FPS)</option>
+            <option selected="selected" value="screenshots/postprocessing/veryhigh54.jpg">Very high (54 FPS)</option>
         </select>
     </div>
-    <div id="center_s">Foliage quality</div>
+    <div id="center_s">Postprocessing quality</div>
 </div>
 
 <div class="slide-comparison">
-    <img id="imageToSwapRight" class="profile" src="screenshots/foliage/veryhigh48.jpg">
+    <img id="imageToSwapRight" class="profile" src="screenshots/postprocessing/veryhigh54.jpg">
     <div class="resized">
-        <img id="imageToSwapLeft" class="profile" src="screenshots/foliage/low50.jpg">
+        <img id="imageToSwapLeft" class="profile" src="screenshots/postprocessing/low58.jpg">
     </div>
     <div class="divider"></div>
 </div>
 
 <div id="bottom_text">
-    "Set the density and draw distance of foliage. Higher settings will make the foliage thicker and visible at greater distances."
+    "Set the quality of image postprocessing. Higher settings will result in better-looking filtering of the final image."
 </div>
 
 <script id="searcher" src="image-comparison-slider.js?mode=fullscreen"></script>

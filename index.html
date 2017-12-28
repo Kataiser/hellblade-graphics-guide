@@ -14,7 +14,7 @@
             text-align: center;
             color: black;
             background: black url('html/bg.jpg');
-            background-size: cover;
+            background-size: auto;
         }
         .all_encompassing {
             display: flex;
@@ -55,20 +55,25 @@
             text-align: left;
             padding: 5px 2.5% 15px;
         }
-        .overlay {
+        .overlay_right {
             position: absolute;
             top: 8px;
+            right: 16px;
             font-family: sans-serif;
             color: white;
             text-shadow: 0 0 8px black;
             font-weight: bold;
             font-size: 1.5em;
         }
-        #overlay_right {
-            right: 16px;
-        }
-        #overlay_left {
+        .overlay_left {
+            position: absolute;
+            top: 8px;
             left: 16px;
+            font-family: sans-serif;
+            color: white;
+            text-shadow: 0 0 8px black;
+            font-weight: bold;
+            font-size: 1.5em;
             white-space: nowrap;
             overflow: hidden;
         }
@@ -83,23 +88,41 @@
             <a href="https://kataiser.github.io/hellblade-graphics-guide/html/overall-graphics-presets.html" target="_blank">
                 <div class="slide-comparison">
                     <img class="profile" src="html/screenshots/overall/veryhigh59_small.jpg">
-                    <div class="overlay" id="overlay_right">Very high (59 FPS)</div>
+                    <div class="overlay_right">Very high (59 FPS)</div>
                     <div class="resized">
                         <img class="profile" src="html/screenshots/overall/low98_small.jpg">
-                        <div class="overlay" id="overlay_left">Low (98 FPS)</div>
+                        <div class="overlay_left">Low (98 FPS)</div>
                     </div>
                     <div class="divider"></div>
                 </div>
             </a>
         </div>
         <div class="subtitle">Foliage</div>
-        <div class="description">"Set the density and draw distance of foliage. Higher settings will make the foliage thicker and visible at greater distances."</div>
+        <div class="description">"Set the density and draw distance of foliage. Higher settings will make the foliage thicker and visible at greater distances."
+            These are going to get filled out more in the future.</div>
         <div> <!-- this is intentional I swear -->
             <a href="https://kataiser.github.io/hellblade-graphics-guide/html/foliage.html" target="_blank">
                 <div class="slide-comparison">
                     <img class="profile" src="html/screenshots/foliage/veryhigh48_small.jpg">
+                    <div class="overlay_right">Very high (48 FPS)</div>
                     <div class="resized">
                         <img class="profile" src="html/screenshots/foliage/low50_small.jpg">
+                        <div class="overlay_left">Low (50 FPS)</div>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </a>
+        </div>
+        <div class="subtitle">Postprocessing</div>
+        <div class="description">"Set the quality of image postprocessing. Higher settings will result in better-looking filtering of the final image."</div>
+        <div> <!-- this is intentional I swear -->
+            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/postprocessing.html" target="_blank">
+                <div class="slide-comparison">
+                    <img class="profile" src="html/screenshots/postprocessing/veryhigh54_small.jpg">
+                    <div class="overlay_right">Very high (54 FPS)</div>
+                    <div class="resized">
+                        <img class="profile" src="html/screenshots/postprocessing/low58_small.jpg">
+                        <div class="overlay_left">Low (58 FPS)</div>
                     </div>
                     <div class="divider"></div>
                 </div>
