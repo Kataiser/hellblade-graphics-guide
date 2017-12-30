@@ -47,13 +47,15 @@
             font-size: 1.75em;
             text-align: left;
             padding-left: 2.5%;
-            padding-top: 20px;
         }
         .description {
             font-family: sans-serif;
             font-size: 1em;
             text-align: left;
             padding: 5px 2.5% 15px;
+        }
+        #top_description{
+            font-size: 1.1em;
         }
         .overlay_right {
             position: absolute;
@@ -77,6 +79,12 @@
             white-space: nowrap;
             overflow: hidden;
         }
+        .pad_bottom {
+            padding-bottom: 20px;
+        }
+        a:link {
+            color: #335c85;
+        }
     </style>
 </head>
 <body>
@@ -84,8 +92,26 @@
 <div class="all_encompassing">
     <div class="center_column">
         <p class="title">Hellblade: Senua's Sacrifice graphics guide</p>
-        <div> <!-- this is intentional I swear -->
-            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/overall-graphics-presets.html" target="_blank">
+        <div class="description" id="top_description">
+            An in-depth guide for the effects of the graphics options in the PC version of Ninja Theory's
+            "<a href="http://store.steampowered.com/app/414340/Hellblade_Senuas_Sacrifice/" target="_blank">Hellblade: Senua's Sacrifice</a>".
+            All these screenshot comparisons are interactive (hover over or slide divider), and can be clicked on for fullscreen and the intermediate options.
+            All screenshots are from just after the Valravn fight, in the previous area.
+            The framerates are determined by a Fraps average over 4 seconds, on <a href="https://pcpartpicker.com/b/TFFdnQ" target="_blank">this PC</a>.
+            To get above 60 FPS, disable V-Sync and edit a config file as described <a href="https://pcgamingwiki.com/wiki/Hellblade:_Senua%27s_Sacrifice#High_frame_rate" target="_blank">here</a>.
+            Download high resolution screenshots <a href="" target="_blank">here</a>.
+            By <a href="https://github.com/Kataiser" target="_blank">Kataiser</a>.
+        </div>
+
+        <div class="subtitle">Quality presets</div>
+        <div class="description">
+            "Set the overall preset of graphics quality." Sets every option to the selected value at once.
+            The overall color and atmospherics of the scene are hardly changed, along with the model quality and bloom, but textures are very blurry,
+            lighting and shadowing is inaccurate, and the grass is less dense. IMPORTANT: this is tied directly to the quality of light shafts (god rays if you prefer).
+            Turning this to medium or lower and every other option up to very high will result in about a 10 FPS increase at the cost of lower resolution light shafts.
+        </div>
+        <div class="pad_bottom">
+            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/overall-graphics-presets.html">
                 <div class="slide-comparison">
                     <img class="profile" src="html/screenshots/overall/veryhigh57_small.jpg">
                     <div class="overlay_right">Very high (57 FPS)</div>
@@ -98,10 +124,11 @@
             </a>
         </div>
         <div class="subtitle">Foliage</div>
-        <div class="description">"Set the density and draw distance of foliage. Higher settings will make the foliage thicker and visible at greater distances."
-            These are going to get filled out more in the future.</div>
-        <div> <!-- this is intentional I swear -->
-            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/foliage.html" target="_blank">
+        <div class="description">
+            "Set the density and draw distance of foliage. Higher settings will make the foliage thicker and visible at greater distances."
+            Appears to only affect grass density, not quality or distance drawn, and has no effect on tree leaves.</div>
+        <div class="pad_bottom">
+            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/foliage.html">
                 <div class="slide-comparison">
                     <img class="profile" src="html/screenshots/foliage/veryhigh48_small.jpg">
                     <div class="overlay_right">Very high (48 FPS)</div>
@@ -114,9 +141,12 @@
             </a>
         </div>
         <div class="subtitle">Postprocessing</div>
-        <div class="description">"Set the quality of image postprocessing. Higher settings will result in better-looking filtering of the final image."</div>
-        <div> <!-- this is intentional I swear -->
-            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/postprocessing.html" target="_blank">
+        <div class="description">
+            "Set the quality of image postprocessing. Higher settings will result in better-looking filtering of the final image."
+            Controls the existence and quality of ambient occlusion, chromatic aberration, anti-aliasing, and noise.
+        </div>
+        <div class="pad_bottom">
+            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/postprocessing.html">
                 <div class="slide-comparison">
                     <img class="profile" src="html/screenshots/postprocessing/veryhigh54_small.jpg">
                     <div class="overlay_right">Very high (54 FPS)</div>
@@ -129,9 +159,14 @@
             </a>
         </div>
         <div class="subtitle">Shadows</div>
-        <div class="description">"Set the quality of shadows. Higher settings will result in more detailed and softer shadows."</div>
-        <div> <!-- this is intentional I swear -->
-            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/shadows.html" target="_blank">
+        <div class="description">
+            "Set the quality of shadows. Higher settings will result in more detailed and softer shadows."
+            While the accuracy of shadows is clearly improved, the apparent quality change is almost undetectable in a still image.
+            However, the pop-in (although smoothed) at lower settings is quite noticeable when in motion, and flags aren't properly transparent.
+            Dithering is occasionally visible at all settings.
+        </div>
+        <div class="pad_bottom">
+            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/shadows.html">
                 <div class="slide-comparison">
                     <img class="profile" src="html/screenshots/shadows/veryhigh62_small.jpg">
                     <div class="overlay_right">Very high (62 FPS)</div>
@@ -144,9 +179,13 @@
             </a>
         </div>
         <div class="subtitle">Textures</div>
-        <div class="description">"Set the allowed memory size of textures and texture filtering quality. Higher settings will result in more detail textures at greater distances."</div>
-        <div> <!-- this is intentional I swear -->
-            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/textures.html" target="_blank">
+        <div class="description">
+            "Set the allowed memory size of textures and texture filtering quality. Higher settings will result in more detail textures at greater distances."
+            Doesn't appear to affect trees or Senua's hair and fur. Low makes makes certain environment objects particularly gross.
+            Can indirectly affect shadows.
+        </div>
+        <div class="pad_bottom">
+            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/textures.html">
                 <div class="slide-comparison">
                     <img class="profile" src="html/screenshots/textures/veryhigh69_small.jpg">
                     <div class="overlay_right">Very high (69 FPS)</div>
@@ -159,9 +198,13 @@
             </a>
         </div>
         <div class="subtitle">View distance</div>
-        <div class="description">"Set the general draw distance of objects. Higher settings will result in more objects being displayed at farther distances."</div>
-        <div> <!-- this is intentional I swear -->
-            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/view distance.html" target="_blank">
+        <div class="description">
+            "Set the general draw distance of objects. Higher settings will result in more objects being displayed at farther distances."
+            The objects that get removed at various distances are mostly grass, small rocks, and ropes, along with many other scene-specific models.
+            Can indirectly affect shadows.
+        </div>
+        <div class="pad_bottom">
+            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/view-distance.html">
                 <div class="slide-comparison">
                     <img class="profile" src="html/screenshots/view distance/veryhigh59_small.jpg">
                     <div class="overlay_right">Very high (59 FPS)</div>
@@ -174,9 +217,12 @@
             </a>
         </div>
         <div class="subtitle">View effects</div>
-        <div class="description">"Set the quality of special effects. Higher settings will result in better quality of particle lights and reflections."</div>
-        <div> <!-- this is intentional I swear -->
-            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/view effects.html" target="_blank">
+        <div class="description">
+            "Set the quality of special effects. Higher settings will result in better quality of particle lights and reflections."
+            No apparent effect on reflections, and I don't even know where particle lights would be in this game.
+        </div>
+        <div class="pad_bottom">
+            <a href="https://kataiser.github.io/hellblade-graphics-guide/html/view-effects.html">
                 <div class="slide-comparison">
                     <img class="profile" src="html/screenshots/view effects/veryhigh69_small.jpg">
                     <div class="overlay_right">Very high (69 FPS)</div>
