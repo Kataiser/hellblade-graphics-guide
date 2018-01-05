@@ -1,11 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-
         <loc>https://kataiser.github.io/hellblade-graphics-guide/</loc>
-
+        <priority>1</priority>
     </url>
-
+    <url>
+        <loc>https://kataiser.github.io/hellblade-graphics-guide/html/foliage.html</loc>
+        <priority>0.25</priority>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/foliage/veryhigh48.jpg</image:loc>
+            <image:title>Foliage: very high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/foliage/high49.jpg</image:loc>
+            <image:title>Foliage: high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/foliage/medium49.jpg</image:loc>
+            <image:title>Foliage: medium quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/foliage/low50.jpg</image:loc>
+            <image:title>Foliage: low quality screenshot</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://kataiser.github.io/hellblade-graphics-guide/html/overall-graphics-presets.html</loc>
+        <priority>0.25</priority>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/overall/veryhigh57.jpg</image:loc>
+            <image:title>Quality preset: very high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/overall/high66.jpg</image:loc>
+            <image:title>Quality preset: high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/overall/medium81.jpg</image:loc>
+            <image:title>Quality preset: medium quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/overall/low97.jpg</image:loc>
+            <image:title>Quality preset: low quality screenshot</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://kataiser.github.io/hellblade-graphics-guide/html/postprocessing.html</loc>
+        <priority>0.25</priority>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/postprocessing/veryhigh54.jpg</image:loc>
+            <image:title>Postprocessing: very high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/postprocessing/high54.jpg</image:loc>
+            <image:title>Postprocessing: high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/postprocessing/medium53.jpg</image:loc>
+            <image:title>Postprocessing: medium quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/postprocessing/low58.jpg</image:loc>
+            <image:title>Postprocessing: low quality screenshot</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://kataiser.github.io/hellblade-graphics-guide/html/shadows.html</loc>
+        <priority>0.25</priority>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/shadows/veryhigh62.jpg</image:loc>
+            <image:title>Shadows: very high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/shadows/high64.jpg</image:loc>
+            <image:title>Shadows: high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/shadows/medium64.jpg</image:loc>
+            <image:title>Shadows: medium quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/shadows/low64.jpg</image:loc>
+            <image:title>Shadows: low quality screenshot</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://kataiser.github.io/hellblade-graphics-guide/html/textures.html</loc>
+        <priority>0.25</priority>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/textures/veryhigh69.jpg</image:loc>
+            <image:title>Textures: very high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/textures/high67.jpg</image:loc>
+            <image:title>Textures: high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/textures/medium70.jpg</image:loc>
+            <image:title>Textures: medium quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/textures/low72.jpg</image:loc>
+            <image:title>Textures: low quality screenshot</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://kataiser.github.io/hellblade-graphics-guide/html/view-distance.html</loc>
+        <priority>0.25</priority>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/view-distance/veryhigh69.jpg</image:loc>
+            <image:title>View distance: very high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/view-distance/high67.jpg</image:loc>
+            <image:title>View distance: high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/view-distance/medium70.jpg</image:loc>
+            <image:title>View distance: medium quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/view-distance/low72.jpg</image:loc>
+            <image:title>View distance: low quality screenshot</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://kataiser.github.io/hellblade-graphics-guide/html/view-effects.html</loc>
+        <priority>0.25</priority>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/view-effects/veryhigh69.jpg</image:loc>
+            <image:title>View effects: very high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/view-effects/high67.jpg</image:loc>
+            <image:title>View effects: high quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/view-effects/medium70.jpg</image:loc>
+            <image:title>View effects: medium quality screenshot</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://github.com/Kataiser/hellblade-graphics-guide/blob/master/html/screenshots/view-effects/low72.jpg</image:loc>
+            <image:title>View effects: low quality screenshot</image:title>
+        </image:image>
+    </url>
 </urlset>
