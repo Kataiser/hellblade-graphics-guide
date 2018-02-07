@@ -23,10 +23,13 @@
         #bottom_text {
             font-family: sans-serif;
             padding-top: 10px;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
         }
         #left_side {
             float: left;
-            padding-left: 10%;
+            padding-left: 12%;
         }
         #center_s {
             margin-left: auto;
@@ -35,7 +38,29 @@
         }
         #right_side {
             float: right;
-            padding-right: 10%;
+            padding-right: 12%;
+        }
+        .overlay_right {
+            font-family: sans-serif;
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            color: white;
+            text-shadow: 0 0 8px black;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        .overlay_left {
+            font-family: sans-serif;
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            color: white;
+            text-shadow: 0 0 8px black;
+            font-weight: bold;
+            font-size: 1.5em;
+            white-space: nowrap;
+            overflow: hidden;
         }
     </style>
     <script src="jquery.min.js"></script>
@@ -44,7 +69,7 @@
 
 <div id="top_text">
     <div id="left_side">
-        <select onchange="$('#imageToSwapLeft').attr('src', this.options[this.selectedIndex].value);">
+        <select onchange="$('#imageToSwapLeft').attr('src', this.options[this.selectedIndex].value);$('.overlay_left').text(this.options[this.selectedIndex].text);">
             <option selected="selected" value="screenshots/view effects/low76.jpg">Low (76 FPS)</option>
             <option value="screenshots/view effects/medium74.jpg">Medium (74 FPS)</option>
             <option value="screenshots/view effects/high73.jpg">High (73 FPS)</option>
@@ -52,7 +77,7 @@
         </select>
     </div>
     <div id="right_side">
-        <select onchange="$('#imageToSwapRight').attr('src', this.options[this.selectedIndex].value);">
+        <select onchange="$('#imageToSwapRight').attr('src', this.options[this.selectedIndex].value);$('.overlay_right').text(this.options[this.selectedIndex].text);">
             <option value="screenshots/view effects/low76.jpg">Low (76 FPS)</option>
             <option value="screenshots/view effects/medium74.jpg">Medium (74 FPS)</option>
             <option value="screenshots/view effects/high73.jpg">High (73 FPS)</option>
@@ -64,14 +89,17 @@
 
 <div class="slide-comparison">
     <img id="imageToSwapRight" class="profile" src="screenshots/view effects/veryhigh69.jpg">
+    <div class="overlay_right">Very high (69 FPS)</div>
     <div class="resized">
         <img id="imageToSwapLeft" class="profile" src="screenshots/view effects/low76.jpg">
+        <div class="overlay_left">Low (76 FPS)</div>
     </div>
     <div class="divider"></div>
 </div>
 
 <div id="bottom_text">
     "Set the quality of special effects. Higher settings will result in better quality of particle lights and reflections."
+    No apparent effect on reflections, and I don't even know where particle lights would be in this game.
 </div>
 
 <script id="searcher" src="image-comparison-slider.min.js?mode=fullscreen"></script>
