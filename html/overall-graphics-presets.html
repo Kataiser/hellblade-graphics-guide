@@ -62,6 +62,7 @@
             text-shadow: 0 0 8px black;
             font-weight: bold;
             font-size: 1.5em;
+            box-shadow: 0 0 128px rgba(0, 0, 0, 1);
         }
         .overlay_left {
             font-family: sans-serif;
@@ -74,38 +75,40 @@
             font-size: 1.5em;
             white-space: nowrap;
             overflow: hidden;
+            box-shadow: 0 0 128px rgba(0, 0, 0, 1);
         }
     </style>
     <script src="jquery.min.js"></script>
 </head>
 <body>
 
+
 <div id="top_text">
     <div id="left_side">
         <select onchange="$('#imageToSwapLeft').attr('src', this.options[this.selectedIndex].value);$('.overlay_left').text(this.options[this.selectedIndex].text);">
-            <option selected="selected" value="screenshots/overall/low97.jpg">Low (97 FPS)</option>
-            <option value="screenshots/overall/medium81.jpg">Medium (81 FPS)</option>
-            <option value="screenshots/overall/high66.jpg">High (66 FPS)</option>
-            <option value="screenshots/overall/veryhigh57.jpg">Very high (57 FPS)</option>
+            <option selected="selected" value="screenshots/overall/low.jpg">Low (102 FPS)</option>
+            <option value="screenshots/overall/medium.jpg">Medium (81 FPS)</option>
+            <option value="screenshots/overall/high.jpg">High (66 FPS)</option>
+            <option value="screenshots/overall/veryhigh.jpg">Very high (56 FPS)</option>
         </select>
     </div>
     <div id="right_side">
         <select onchange="$('#imageToSwapRight').attr('src', this.options[this.selectedIndex].value);$('.overlay_right').text(this.options[this.selectedIndex].text);">
-            <option value="screenshots/overall/low97.jpg">Low (97 FPS)</option>
-            <option value="screenshots/overall/medium81.jpg">Medium (81 FPS)</option>
-            <option value="screenshots/overall/high66.jpg">High (66 FPS)</option>
-            <option selected="selected" value="screenshots/overall/veryhigh57.jpg">Very high (57 FPS)</option>
+            <option value="screenshots/overall/low.jpg">Low (102 FPS)</option>
+            <option value="screenshots/overall/medium.jpg">Medium (81 FPS)</option>
+            <option value="screenshots/overall/high.jpg">High (66 FPS)</option>
+            <option selected="selected" value="screenshots/overall/veryhigh.jpg">Very high (56 FPS)</option>
         </select>
     </div>
     <div id="center_s">Overall quality presets</div>
 </div>
 
 <div class="slide-comparison">
-    <img id="imageToSwapRight" class="profile" src="screenshots/overall/veryhigh57.jpg">
-    <div class="overlay_right">Very high (57 FPS)</div>
+    <img id="imageToSwapRight" class="profile" src="screenshots/overall/veryhigh.jpg">
+    <div class="overlay_right">Very high (56 FPS)</div>
     <div class="resized">
-        <img id="imageToSwapLeft" class="profile" src="screenshots/overall/low97.jpg">
-        <div class="overlay_left">Low (97 FPS)</div>
+        <img id="imageToSwapLeft" class="profile" src="screenshots/overall/low.jpg">
+        <div class="overlay_left">Low (102 FPS)</div>
     </div>
     <div class="divider"></div>
 </div>
