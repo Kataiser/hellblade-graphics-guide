@@ -52,7 +52,18 @@
 	// Style
 	
 	__webpack_require__(/*! ./index.scss */ 1);
-	
+
+	var supportsPassive = false;
+	try {
+		var opts = Object.defineProperty({}, 'passive', {
+			get: function() {
+				supportsPassive = true;
+			}
+		});
+		window.addEventListener("testPassive", null, opts);
+		window.removeEventListener("testPassive", null, opts);
+	} catch (e) {}
+
 	var bindComparison = function bindComparison(handle, resized, container) {
 	
 	  var moveWidth = 0;
@@ -77,8 +88,8 @@
 	
 	  var moveSlide = function moveSlide(e) {
 	
-	    document.addEventListener('touchmove', scrollBlock, false);
-	
+	    document.addEventListener('touchmove', scrollBlock, supportsPassive ? { passive: true } : false);
+
 	    var pageX = getPageX(e);
 	
 	    if (pageX !== false) {
@@ -90,9 +101,9 @@
 	  };
 	
 	  // Bind events to container
-	  container.addEventListener("mousemove", moveSlide);
-	  container.addEventListener("touchmove", moveSlide);
-	  container.addEventListener("touchend", unbindScrollBlock);
+	  container.addEventListener("mousemove", moveSlide, supportsPassive ? { passive: true } : false);
+	  container.addEventListener("touchmove", moveSlide, supportsPassive ? { passive: true } : false);
+	  container.addEventListener("touchend", unbindScrollBlock, supportsPassive ? { passive: true } : false);
 	};
 	
 	// Get sliders and iterate on them
