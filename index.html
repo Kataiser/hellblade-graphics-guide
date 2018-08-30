@@ -136,6 +136,14 @@
         iframe {
             padding: 0 2.5% 15px;
         }
+        .lazy {
+            -webkit-filter: blur(40px);
+            filter: blur(40px);
+        }
+        .lazy.lazy-loaded {
+            -webkit-filter: none;
+            filter: none;
+        }
     </style>
     <script src="html/jquery-2.2.4.min.js"></script>
     <script src="html/recliner.min.js"></script>
@@ -144,7 +152,7 @@
             $(function() {
                 $(".lazy").recliner({
                     attrib: "data-src", // selector for attribute containing the media src
-                    throttle: 300,      // millisecond interval at which to process events
+                    throttle: 200,      // millisecond interval at which to process events
                     threshold: 200,     // scroll distance from element before its loaded
                     live: true          // auto bind lazy loading to ajax loaded elements
                 });
