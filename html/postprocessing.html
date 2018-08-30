@@ -78,7 +78,20 @@
             color: #608fbf;
         }
     </style>
-    <script src="jquery.min.js"></script>
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="recliner.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(function() {
+                $(".lazy").recliner({
+                    attrib: "data-src", // selector for attribute containing the media src
+                    throttle: 300,      // millisecond interval at which to process events
+                    threshold: 200,     // scroll distance from element before its loaded
+                    live: true          // auto bind lazy loading to ajax loaded elements
+                });
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -103,10 +116,10 @@
 </div>
 
 <div class="slide-comparison">
-    <img id="imageToSwapRight" class="profile" src="screenshots/postprocessing/veryhigh.jpg">
+    <img id="imageToSwapRight" class="lazy" src="screenshots/overall/tiny.jpg" data-src="screenshots/postprocessing/veryhigh.jpg" width="1448" height="814">
     <div class="overlay_right">Very high (61 FPS)</div>
     <div class="resized">
-        <img id="imageToSwapLeft" class="profile" src="screenshots/postprocessing/low.jpg">
+        <img id="imageToSwapLeft" class="lazy" src="screenshots/overall/tiny.jpg" data-src="screenshots/postprocessing/low.jpg" width="1448" height="814">
         <div class="overlay_left">Low (64 FPS)</div>
     </div>
     <div class="divider"></div>
