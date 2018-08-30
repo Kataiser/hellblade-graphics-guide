@@ -138,11 +138,18 @@
         }
 
     </style>
-    <script src="html/jquery.min.js"></script>
-    <script src="html/jquery.unveil.min.js"></script>
+    <script src="html/jquery-2.2.4.min.js"></script>
+    <script src="html/recliner.min.js"></script>
     <script>
         $(document).ready(function() {
-            $("img").unveil();
+            $(function() {
+                $(".lazy").recliner({
+                    attrib: "data-src", // selector for attribute containing the media src
+                    throttle: 300,      // millisecond interval at which to process events
+                    threshold: 200,     // scroll distance from element before its loaded
+                    live: true          // auto bind lazy loading to ajax loaded elements
+                });
+            });
         });
     </script>
 </head>
@@ -189,10 +196,10 @@
         <div class="pad_bottom">
             <a href="html/overall-graphics-presets.html">
                 <div class="slide-comparison">
-                    <img class="profile" src="html/screenshots/overall/tiny.jpg" data-src="html/screenshots/overall/veryhigh_small.jpg" alt="Quality preset: very high quality screenshot" width="973" height="546">
+                    <img class="lazy" src="html/screenshots/overall/tiny.jpg" data-src="html/screenshots/overall/veryhigh_small.jpg" alt="Quality preset: very high quality screenshot" width="973" height="546">
                     <div class="overlay_right">Very high (56 FPS)</div>
                     <div class="resized">
-                        <img class="profile" src="html/screenshots/overall/tiny.jpg" data-src="html/screenshots/overall/low_small.jpg" alt="Quality preset: low quality screenshot" width="973" height="546">
+                        <img class="lazy" src="html/screenshots/overall/tiny.jpg" data-src="html/screenshots/overall/low_small.jpg" alt="Quality preset: low quality screenshot" width="973" height="546">
                         <div class="overlay_left">Low (102 FPS)</div>
                     </div>
                     <div class="divider"></div>
@@ -206,10 +213,10 @@
         <div class="pad_bottom">
             <a href="html/foliage.html">
                 <div class="slide-comparison">
-                    <img class="profile" src="html/screenshots/foliage/tiny.jpg" data-src="html/screenshots/foliage/veryhigh_small.jpg" alt="Foliage: very high quality screenshot" width="973" height="546">
+                    <img class="lazy" src="html/screenshots/foliage/tiny.jpg" data-src="html/screenshots/foliage/veryhigh_small.jpg" alt="Foliage: very high quality screenshot" width="973" height="546">
                     <div class="overlay_right">Very high (54 FPS)</div>
                     <div class="resized">
-                        <img class="profile" src="html/screenshots/foliage/tiny.jpg" data-src="html/screenshots/foliage/low_small.jpg" alt="Foliage: low quality screenshot" width="973" height="546">
+                        <img class="lazy" src="html/screenshots/foliage/tiny.jpg" data-src="html/screenshots/foliage/low_small.jpg" alt="Foliage: low quality screenshot" width="973" height="546">
                         <div class="overlay_left">Low (57 FPS)</div>
                     </div>
                     <div class="divider"></div>
@@ -224,10 +231,10 @@
         <div class="pad_bottom">
             <a href="html/postprocessing.html">
                 <div class="slide-comparison">
-                    <img class="profile" src="html/screenshots/postprocessing/tiny.jpg" data-src="html/screenshots/postprocessing/veryhigh_small.jpg" alt="Postprocessing: very high quality screenshot" width="973" height="546">
+                    <img class="lazy" src="html/screenshots/postprocessing/tiny.jpg" data-src="html/screenshots/postprocessing/veryhigh_small.jpg" alt="Postprocessing: very high quality screenshot" width="973" height="546">
                     <div class="overlay_right">Very high (61 FPS)</div>
                     <div class="resized">
-                        <img class="profile" src="html/screenshots/postprocessing/tiny.jpg" data-src="html/screenshots/postprocessing/low_small.jpg" alt="Postprocessing: low quality screenshot" width="973" height="546">
+                        <img class="lazy" src="html/screenshots/postprocessing/tiny.jpg" data-src="html/screenshots/postprocessing/low_small.jpg" alt="Postprocessing: low quality screenshot" width="973" height="546">
                         <div class="overlay_left">Low (64 FPS)</div>
                     </div>
                     <div class="divider"></div>
@@ -244,10 +251,10 @@
         <div class="pad_bottom">
             <a href="html/shadows.html">
                 <div class="slide-comparison">
-                    <img class="profile" src="html/screenshots/shadows/tiny.jpg" data-src="html/screenshots/shadows/veryhigh_small.jpg" alt="Shadows: very high quality screenshot" width="973" height="546">
+                    <img class="lazy" src="html/screenshots/shadows/tiny.jpg" data-src="html/screenshots/shadows/veryhigh_small.jpg" alt="Shadows: very high quality screenshot" width="973" height="546">
                     <div class="overlay_right">Very high (64 FPS)</div>
                     <div class="resized">
-                        <img class="profile" src="html/screenshots/shadows/tiny.jpg" data-src="html/screenshots/shadows/low_small.jpg" alt="Shadows: low quality screenshot" width="973" height="546">
+                        <img class="lazy" src="html/screenshots/shadows/tiny.jpg" data-src="html/screenshots/shadows/low_small.jpg" alt="Shadows: low quality screenshot" width="973" height="546">
                         <div class="overlay_left">Low (65 FPS)</div>
                     </div>
                     <div class="divider"></div>
@@ -263,10 +270,10 @@
         <div class="pad_bottom">
             <a href="html/textures.html">
                 <div class="slide-comparison">
-                    <img class="profile" src="html/screenshots/textures/tiny.jpg" data-src="html/screenshots/textures/veryhigh_small.jpg" alt="Textures: very high quality screenshot" width="973" height="546">
+                    <img class="lazy" src="html/screenshots/textures/tiny.jpg" data-src="html/screenshots/textures/veryhigh_small.jpg" alt="Textures: very high quality screenshot" width="973" height="546">
                     <div class="overlay_right">Very high (72 FPS)</div>
                     <div class="resized">
-                        <img class="profile" src="html/screenshots/textures/tiny.jpg" data-src="html/screenshots/textures/low_small.jpg" alt="Textures: low quality screenshot" width="973" height="546">
+                        <img class="lazy" src="html/screenshots/textures/tiny.jpg" data-src="html/screenshots/textures/low_small.jpg" alt="Textures: low quality screenshot" width="973" height="546">
                         <div class="overlay_left">Low (79 FPS)</div>
                     </div>
                     <div class="divider"></div>
@@ -282,10 +289,10 @@
         <div class="pad_bottom">
             <a href="html/view-distance.html">
                 <div class="slide-comparison">
-                    <img class="profile" src="html/screenshots/view distance/tiny.jpg" data-src="html/screenshots/view distance/veryhigh_small.jpg" alt="View distance: very high quality screenshot" width="973" height="546">
+                    <img class="lazy" src="html/screenshots/view distance/tiny.jpg" data-src="html/screenshots/view distance/veryhigh_small.jpg" alt="View distance: very high quality screenshot" width="973" height="546">
                     <div class="overlay_right">Very high (63 FPS)</div>
                     <div class="resized">
-                        <img class="profile" src="html/screenshots/view distance/tiny.jpg" data-src="html/screenshots/view distance/low_small.jpg" alt="View distance: low quality screenshot" width="973" height="546">
+                        <img class="lazy" src="html/screenshots/view distance/tiny.jpg" data-src="html/screenshots/view distance/low_small.jpg" alt="View distance: low quality screenshot" width="973" height="546">
                         <div class="overlay_left">Low (66 FPS)</div>
                     </div>
                     <div class="divider"></div>
@@ -300,10 +307,10 @@
         <div class="pad_bottom">
             <a href="html/view-effects.html">
                 <div class="slide-comparison">
-                    <img class="profile" src="html/screenshots/view effects/tiny.jpg" data-src="html/screenshots/view effects/veryhigh_small.jpg" alt="View effects: very high quality screenshot" width="973" height="546">
+                    <img class="lazy" src="html/screenshots/view effects/tiny.jpg" data-src="html/screenshots/view effects/veryhigh_small.jpg" alt="View effects: very high quality screenshot" width="973" height="546">
                     <div class="overlay_right">Very high (61 FPS)</div>
                     <div class="resized">
-                        <img class="profile" src="html/screenshots/view effects/tiny.jpg" data-src="html/screenshots/view effects/low_small.jpg" alt="View effects: low quality screenshot" width="973" height="546">
+                        <img class="lazy" src="html/screenshots/view effects/tiny.jpg" data-src="html/screenshots/view effects/low_small.jpg" alt="View effects: low quality screenshot" width="973" height="546">
                         <div class="overlay_left">Low (65 FPS)</div>
                     </div>
                     <div class="divider"></div>
