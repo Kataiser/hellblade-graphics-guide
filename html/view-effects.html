@@ -105,7 +105,8 @@
 
 <div id="top_text">
     <div id="left_side">
-        <select onchange="$('#imageToSwapLeft').attr('src', this.options[this.selectedIndex].value);$('.overlay_left').text(this.options[this.selectedIndex].text);">
+        <select onchange="$('#imageToSwapLeft').attr('data-src', this.options[this.selectedIndex].value).attr('src', 'screenshots/view effects/tiny.jpg').attr('class', 'lazy').recliner(
+                {attrib: 'data-src', throttle: 200, threshold: 200, printable: true});$('.overlay_left').text(this.options[this.selectedIndex].text);">
             <option selected="selected" value="screenshots/view effects/low.jpg">Low (65 FPS)</option>
             <option value="screenshots/view effects/medium.jpg">Medium (62 FPS)</option>
             <option value="screenshots/view effects/high.jpg">High (61 FPS)</option>
@@ -113,7 +114,8 @@
         </select>
     </div>
     <div id="right_side">
-        <select onchange="$('#imageToSwapRight').attr('src', this.options[this.selectedIndex].value);$('.overlay_right').text(this.options[this.selectedIndex].text);">
+        <select onchange="$('#imageToSwapRight').attr('data-src', this.options[this.selectedIndex].value).attr('src', 'screenshots/view effects/tiny.jpg').attr('class', 'lazy').recliner(
+                {attrib: 'data-src', throttle: 200, threshold: 200, printable: true});$('.overlay_right').text(this.options[this.selectedIndex].text);">
             <option value="screenshots/view effects/low.jpg">Low (65 FPS)</option>
             <option value="screenshots/view effects/medium.jpg">Medium (62 FPS)</option>
             <option value="screenshots/view effects/high.jpg">High (61 FPS)</option>
@@ -124,10 +126,10 @@
 </div>
 
 <div class="slide-comparison">
-    <img id="imageToSwapRight" class="lazy" src="screenshots/overall/tiny.jpg" data-src="screenshots/view effects/veryhigh.jpg" width="1448" height="814">
+    <img id="imageToSwapRight" class="lazy" src="screenshots/view effects/tiny.jpg" data-src="screenshots/view effects/veryhigh.jpg" width="1448" height="814">
     <div class="overlay_right">Very high (61 FPS)</div>
     <div class="resized">
-        <img id="imageToSwapLeft" class="lazy" src="screenshots/overall/tiny.jpg" data-src="screenshots/view effects/low.jpg" width="1448" height="814">
+        <img id="imageToSwapLeft" class="lazy" src="screenshots/view effects/tiny.jpg" data-src="screenshots/view effects/low.jpg" width="1448" height="814">
         <div class="overlay_left">Low (65 FPS)</div>
     </div>
     <div class="divider"></div>
