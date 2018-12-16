@@ -115,7 +115,7 @@
 
 <div id="top_text">
     <div id="left_side">
-        <select onchange="$('#imageToSwapLeft')attr('data-src', this.options[this.selectedIndex].value).attr('src', 'screenshots/textures/tiny.jpg').attr('class', 'lazy').recliner(
+        <select onchange="$('#imageToSwapLeft').attr('data-src', this.options[this.selectedIndex].value).attr('src', 'screenshots/textures/tiny.jpg').attr('class', 'lazy').recliner(
                 {attrib: 'data-src', throttle: 200, threshold: 200, printable: true});$('.overlay_left').text(this.options[this.selectedIndex].text);">
             <option selected="selected" value="screenshots/textures/low.jpg">Low (79 FPS)</option>
             <option value="screenshots/textures/medium.jpg">Medium (74 FPS)</option>

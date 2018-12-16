@@ -124,7 +124,7 @@
         </select>
     </div>
     <div id="right_side">
-        <select onchange="$('#imageToSwapRight')attr('data-src', this.options[this.selectedIndex].value).attr('src', 'screenshots/postprocessing/tiny.jpg').attr('class', 'lazy').recliner(
+        <select onchange="$('#imageToSwapRight').attr('data-src', this.options[this.selectedIndex].value).attr('src', 'screenshots/postprocessing/tiny.jpg').attr('class', 'lazy').recliner(
                 {attrib: 'data-src', throttle: 200, threshold: 200, printable: true});$('.overlay_right').text(this.options[this.selectedIndex].text);">
             <option value="screenshots/postprocessing/low.jpg">Low (64 FPS)</option>
             <option value="screenshots/postprocessing/medium.jpg">Medium (61 FPS)</option>
