@@ -1,10 +1,10 @@
-## https://kataiser.github.io/hellblade-graphics-guide/
+## <https://kataiser.github.io/hellblade-graphics-guide>
 Code used:
-- [jacted/image-comparison-slider](https://github.com/jacted/image-comparison-slider)
-- [sourcey/recliner](https://github.com/sourcey/recliner)
-- ["Change Image on Select Dropdown HTML+JS" by Josh Wentz](https://joshwentz.blogspot.com/2015/02/change-image-on-select-dropdown-htmljs.html)
+  - [jacted/image-comparison-slider](https://github.com/jacted/image-comparison-slider)
+  - [sourcey/recliner](https://github.com/sourcey/recliner)
+  - ["Change Image on Select Dropdown HTML+JS" by Josh Wentz](https://joshwentz.blogspot.com/2015/02/change-image-on-select-dropdown-htmljs.html)
 
 Because I'm lazy:
-- [Analytics](https://analytics.google.com/analytics/web/#/)
-- [Search Console](https://search.google.com/search-console)
+  - [Analytics](https://analytics.google.com/analytics/web/#/)
+  - [Search Console](https://search.google.com/search-console)
  
